@@ -44,11 +44,29 @@
       <file leaf-file-name="Task_3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/selenium_tasks/src/test/java/by/cherdakk/tasks/Task_3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+            <state relative-caret-position="476">
+              <caret line="28" column="96" selection-start-line="28" selection-start-column="96" selection-end-line="28" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExpectedConditions.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-support/3.11.0/721435e04d8be56e7770ebf05509f31b75695f61/selenium-support-3.11.0-sources.jar!/org/openqa/selenium/support/ui/ExpectedConditions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="959" column="43" selection-start-line="959" selection-start-column="43" selection-end-line="959" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FluentWait.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-support/3.11.0/721435e04d8be56e7770ebf05509f31b75695f61/selenium-support-3.11.0-sources.jar!/org/openqa/selenium/support/ui/FluentWait.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="242" column="50" selection-start-line="242" selection-start-column="44" selection-end-line="242" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -379,7 +397,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="171" />
     <option name="y" value="82" />
     <option name="width" value="1400" />
@@ -473,7 +491,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.Task_3">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -489,6 +507,29 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="by.cherdakk.tasks" />
       <option name="MAIN_CLASS_NAME" value="by.cherdakk.tasks.Task_1" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="Task_3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenium_tasks_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.cherdakk.tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="by.cherdakk.tasks" />
+      <option name="MAIN_CLASS_NAME" value="by.cherdakk.tasks.Task_3" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -538,8 +579,13 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.Task_1" />
+      <item itemvalue="JUnit.Task_3" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Task_3" />
         <item itemvalue="JUnit.Task_1" />
       </list>
     </recent_temporary>
@@ -558,9 +604,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Task_2_1 - 2018.04.11 at 22h 39m 02s.xml">
-      <configuration name="Task_2_1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Task_2_1 - 2018.04.11 at 22h 51m 29s.xml">
       <configuration name="Task_2_1" configurationId="JUnit" />
     </history-entry>
@@ -573,25 +616,42 @@
     <history-entry file="Task_2_1 - 2018.04.12 at 10h 32m 09s.xml">
       <configuration name="Task_2_1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Task_1 - 2018.04.12 at 18h 40m 47s.xml">
+      <configuration name="Task_1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Task_3 - 2018.04.12 at 18h 41m 17s.xml">
+      <configuration name="Task_3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Task_3 - 2018.04.12 at 18h 45m 50s.xml">
+      <configuration name="Task_3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Task_3 - 2018.04.12 at 18h 49m 50s.xml">
+      <configuration name="Task_3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Task_3 - 2018.04.12 at 18h 59m 25s.xml">
+      <configuration name="Task_3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Task_3 - 2018.04.12 at 19h 00m 18s.xml">
+      <configuration name="Task_3" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.3298292" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.32893497" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.26107445" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.26107445" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25" />
       <window_info anchor="right" id="Gradle" order="1" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
@@ -660,10 +720,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-support/3.11.0/721435e04d8be56e7770ebf05509f31b75695f61/selenium-support-3.11.0-sources.jar!/org/openqa/selenium/support/ui/FluentWait.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="242" column="50" selection-start-line="242" selection-start-column="44" selection-end-line="242" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-support/3.11.0/721435e04d8be56e7770ebf05509f31b75695f61/selenium-support-3.11.0-sources.jar!/org/openqa/selenium/support/ui/ExpectedConditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="959" column="43" selection-start-line="959" selection-start-column="43" selection-end-line="959" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/selenium_tasks/src/test/java/by/cherdakk/tasks/Task_3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        <state relative-caret-position="476">
+          <caret line="28" column="96" selection-start-line="28" selection-start-column="96" selection-end-line="28" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
