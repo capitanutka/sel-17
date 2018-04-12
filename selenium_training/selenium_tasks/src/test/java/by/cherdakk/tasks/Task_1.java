@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Task_2_1 {
+public class Task_1 {
 
     private WebDriver driver;
 
