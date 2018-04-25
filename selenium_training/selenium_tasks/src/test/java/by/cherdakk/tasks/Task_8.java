@@ -37,7 +37,7 @@ public class Task_8 {
 
         driver.get("http://localhost/litecart/");
 
-        List<WebElement> ducks = driver.findElements(By.cssSelector("ul.listing-wrapper.products li"));
+        List<WebElement> ducks = driver.findElements(By.cssSelector("li.product"));
         for (WebElement duck : ducks) {
             List<WebElement> stickers = duck.findElements(By.cssSelector("div.sticker"));
 
