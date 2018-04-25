@@ -144,6 +144,7 @@ public class Task_10 {
     return rgb;
   }
 
+  Assert.assertTrue("Found issue: " + failedItems.toString(), failedItems.size() == 0);
 
 }
 
