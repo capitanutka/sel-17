@@ -139,7 +139,7 @@ public class Task_10 {
     String[] numbers = color.replace("rgba(", "").replace("rgb(", "").replace(")", "").split(",");
     rgb.add(Integer.parseInt(numbers[0].trim()));
     rgb.add(Integer.parseInt(numbers[1].trim()));
-    rgb.add(Integer.parseInt(numbers[1].trim()));
+    rgb.add(Integer.parseInt(numbers[2].trim()));
 
     return rgb;
   }
