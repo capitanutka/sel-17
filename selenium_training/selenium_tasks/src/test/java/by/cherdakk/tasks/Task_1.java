@@ -2,9 +2,9 @@ package by.cherdakk.tasks;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+        import org.junit.Test;
+        import org.openqa.selenium.WebDriver;
+        import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Task_1 {
 
@@ -13,7 +13,9 @@ public class Task_1 {
     @Before
     public void start() {
         driver = new ChromeDriver();
+
     }
+
 
     @Test
     public void task_2_1() {
