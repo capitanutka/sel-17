@@ -9,7 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -37,17 +36,11 @@ public class Task_9 {
 
   @Test
   public void test_1A_countriesAreSorted() {
-    List<String> countries = new ArrayList<>();
-    driver.get(" http://localhost/litecart/admin/?app=countries&doc=countries");
+    driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
     List<WebElement> nameCells = driver.findElements(By.cssSelector("form[name=countries_form] tr.row td:nth-child(5) a"));
 
-    for (WebElement nameCell : nameCells) {
-      countries.add(nameCell.getText());
-    }
+    Assert.assertTrue("Countries are not sorted", isColumnSorted(nameCells));
 
-    List<String> countriesSorted = new ArrayList<>(countries);
-    countriesSorted.sort(Comparator.naturalOrder());
-    Assert.assertEquals(countriesSorted, countries);
   }
 
   @Test
@@ -55,7 +48,7 @@ public class Task_9 {
     List<String> failedItems = new ArrayList<>();
 
     List<String> links = new ArrayList<>();
-    driver.get(" http://localhost/litecart/admin/?app=countries&doc=countries");
+    driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
     List<WebElement> countryNameCells = driver.findElements(By.xpath("//form//tr[@class='row']/td[6][not(.='0')]/../td[5]/a"));
     for (WebElement countryNameCell : countryNameCells) {
       links.add(countryNameCell.getAttribute("href"));
@@ -65,20 +58,48 @@ public class Task_9 {
       List<String> zones = new ArrayList<>();
       driver.get(link);
       List<WebElement> zoneNameCells = driver.findElements(By.cssSelector("table#table-zones td:nth-child(3)"));
-      for (int i = 0; i < zoneNameCells.size() - 1; i++) {
-        zones.add(zoneNameCells.get(i).getText());
-      }
+      zoneNameCells.remove(zoneNameCells.size() - 1);
 
-      List<String> zonesSorted = new ArrayList<>(zones);
-      zonesSorted.sort(Comparator.naturalOrder());
-
-      if (!zones.equals(zonesSorted)) {
+      if (!isColumnSorted(zoneNameCells)) {
         failedItems.add(link);
       }
     }
-
     Assert.assertTrue("Links to countries with unsorted zones: " + failedItems.toString(), failedItems.size() == 0);
+  }
 
+  @Test
+  public void test_2_geoZonesAreSorted() {
+    List<String> failedItems = new ArrayList<>();
+
+    List<String> links = new ArrayList<>();
+    driver.get("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
+    List<WebElement> countryNameCells = driver.findElements(By.cssSelector("form[name=geo_zones_form] tr.row td:nth-child(3) a"));
+    for (WebElement countryNameCell : countryNameCells) {
+      links.add(countryNameCell.getAttribute("href"));
+    }
+
+    for (String link : links) {
+      List<String> zones = new ArrayList<>();
+      driver.get(link);
+      List<WebElement> zoneNameCells = driver.findElements(By.cssSelector("table#table-zones td:nth-child(3) option[selected]"));
+      if (!isColumnSorted(zoneNameCells)) {
+        failedItems.add(link);
+      }
+    }
+    Assert.assertTrue("Links to countries with unsorted zones: " + failedItems.toString(), failedItems.size() == 0);
+  }
+
+
+  private boolean isColumnSorted(List<WebElement> column) {
+    List<String> values = new ArrayList<>();
+    for (WebElement cell : column) {
+      values.add(cell.getText());
+    }
+
+    List<String> valuesSorted = new ArrayList<>(values);
+    valuesSorted.sort(Comparator.naturalOrder());
+
+    return values.equals(valuesSorted);
   }
 
 }
