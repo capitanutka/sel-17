@@ -132,6 +132,8 @@ public class Task_10 {
       failedItems.add("Campaign price is not bigger than Regular price on the Own page");
     }
 
+    Assert.assertTrue("Found issue: " + failedItems.toString(), failedItems.size() == 0);
+
   }
 
   private List<Integer> parseColor(String color)  {
@@ -144,7 +146,7 @@ public class Task_10 {
     return rgb;
   }
 
-  Assert.assertTrue("Found issue: " + failedItems.toString(), failedItems.size() == 0);
+
 
 }
 
