@@ -33,7 +33,7 @@ public class task_13 {
   }
 
   @Test
-  public void task_12() {
+  public void task_13() {
     driver.get("http://localhost/litecart/");
     for (int i = 1; i <= 3; i++) {
       addItem(i);

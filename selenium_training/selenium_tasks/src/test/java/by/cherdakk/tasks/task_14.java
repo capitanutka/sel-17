@@ -33,7 +33,7 @@ public class task_14 {
   }
 
   @Test
-  public void task_12() throws InterruptedException {
+  public void task_14() throws InterruptedException {
     driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
     driver.findElement(By.cssSelector("input[name=username]")).sendKeys("admin");
     driver.findElement(By.cssSelector("input[name=password]")).sendKeys("admin");
